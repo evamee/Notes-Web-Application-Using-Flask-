@@ -1,0 +1,83 @@
+{% extends "base.html" %} {% block title %}Sign up{% endblock %} 
+{%block content%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="customcss.css"> <!-- Include your custom CSS file here -->
+</head>
+
+	<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form method="POST" class="mt-5">
+                    <h3 class="text-center mb-4">Sign Up</h3>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email"
+                            class="form-control"
+                            id="email" 
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="FirstName">First Name</label>
+                        <input 
+                            type="text"
+                            class="form-control"
+                            id="FirstName" 
+                            name="FirstName"
+                            placeholder="Enter your first name"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="LastName">Last Name</label>
+                        <input 
+                            type="text"
+                            class="form-control"
+                            id="LastName" 
+                            name="LastName"
+                            placeholder="Enter your last name"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="password1">Password</label>
+                        <input 
+                            type="password"
+                            class="form-control"
+                            id="password1" 
+                            name="password1"
+                            placeholder="Enter your password"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="password2">Confirm Password</label>
+                        <input 
+                            type="password"
+                            class="form-control"
+                            id="password2" 
+                            name="password2"
+                            placeholder="Confirm your password"
+                            required
+                        />
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+    
+
+{%endblock%}
